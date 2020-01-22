@@ -8,3 +8,7 @@ The *ice* folder contains in-class exercises.
 Lauren Scheffler 
 LinkedIn:https://www.linkedin.com/in/lauren-scheffler-576a5118a
 I am seeking a position in a firm or company. I am wishing to fill a position that uses design aspects. 
+
+## Conflicts
+
+This section represents code on the server that isn't on the local respository.
