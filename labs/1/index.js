@@ -1,6 +1,9 @@
 import Adder from "./Adder.js";
-function runOnLoad()
-{
-    
-}
-window.addEventListener("DOMContentLoaded", runOnLoad);
+var input = {
+    a:10,
+    b:5,
+};
+var adderInstance = new Adder(input);
+
+
+console.log(adderInstance.render());
