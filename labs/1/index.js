@@ -1,7 +1,7 @@
-import Adder from "./Adder.js";
+var Adder = require("./Adder.js");
 var input = {
-    a:10,
-    b:5,
+    a:7,
+    b:6,
 };
 var adderInstance = new Adder(input);
 

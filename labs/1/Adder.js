@@ -1,4 +1,5 @@
 class Adder {
+    props;
     constructor(props) {
         this.props = props; 
     }
@@ -11,4 +12,4 @@ class Adder {
         return `<p>The sum of ${this.props.a} + ${this.props.b} is ${this.props.sum()}</p>`;
     }
 }
-export default Adder; 
+module.exports = Adder; 
