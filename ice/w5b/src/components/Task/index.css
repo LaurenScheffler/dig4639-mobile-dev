@@ -1,0 +1,24 @@
+.task{
+    background: gray;
+}
+
+@media only screen and (min-width:800px){
+    #taskText{
+        float: center;
+    }
+    #addTask{
+        float: center; 
+
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #taskText {
+        font-size: 35px;
+        float: center;
+    }
+    #addTask{
+        float: center; 
+
+    }
+}

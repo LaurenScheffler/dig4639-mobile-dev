@@ -16,6 +16,10 @@ class Task {
         this.element.className = "task";
     }
     onClick(e) {
+        var myString = "asdf";
+        if(myString == "") {
+            console.log("Input is true");
+        }
         console.log(this);
         console.log(e.target);
         console.log(e.target.checked);
