@@ -1,5 +1,6 @@
-let Card; // TODO: Replace this with the correct import statement
-function runOnLoad(){    // Create a container for us    
+import Card from "./components/Card/index.js" 
+
+function runOnLoad(){       
     let element = document.createElement("div");    
     element.id = "container";    
     document.body.appendChild(element);    
