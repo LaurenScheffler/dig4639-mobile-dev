@@ -2,16 +2,17 @@
   "name": "w7a",
   "version": "1.0.0",
   "description": "",
-  "main": "sum.js",
+  "main": "MyMath.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
     "@babel/preset-env": "^7.8.4",
-    "babel-preset-jest": "^25.1.0"
+    "babel-jest": "^25.1.0",
+    "babel-preset-jest": "^25.1.0",
+    "jest": "^25.1.0"
   }
 }
