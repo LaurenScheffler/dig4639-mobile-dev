@@ -1,6 +1,6 @@
-var a = 5
-
-console.log(a)
+{
+  var a = 5
+}
 class Pet {
   constructor (props) {
     this.props = props
@@ -18,14 +18,14 @@ class Pet {
     return 'I make this sound: '
   }
 
-  getIdentity = () => {
-    console.log(this)
-  }
+    getIdentity = () => {
+      console.log(this)
+    }
 
-  // getSum = (a,b) => a + b
-  getSum = (a, b) => {
-    return a + b
-  }
+    // getSum = (a,b) => a + b
+    getSum = (a, b) => {
+      return a + b
+    }
 }
 
 class Cat extends Pet {
@@ -52,12 +52,13 @@ function sayName (pet) {
   console.log(`My name is ${pet.getName()}, and I am a ${pet.getSpecies()}`)
   console.log(`${pet.getSpeech()}`)
 }
+
 var myPet = new Cat({ name: 'Luna' })
 sayName(myPet)
 myPet.getIdentity()
-// Assign the method getIdentity to the variable myIdentity
+// Assign the method of identity to the variable myIdentity
 var myIdentity = myPet.getIdentity
-// Call the new function using the myIdentity variable
+// call the new function using the myIdentity variable
 myIdentity()
 var myDog = new Dog({ name: 'Fido' })
 sayName(myDog)
