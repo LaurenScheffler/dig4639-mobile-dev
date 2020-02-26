@@ -80,8 +80,8 @@ function printTodo (arrayInput) {
 console.log(printTodo(todoList).join('\n'))
 
 let filteredArray = []
-for(item of todoList) {
-    if(!ite.completed) {
+for(const item of todoList) {
+    if(!item.completed) {
         filteredArray.push(item)
     }
 }
