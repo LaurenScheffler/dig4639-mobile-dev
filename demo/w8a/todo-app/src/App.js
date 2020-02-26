@@ -30,7 +30,9 @@ class TodoList extends React.Component {
   removeTask(id) {
     console.log(id)
     let todoList = this.state.todoList
+    console.log(todoList)
     todoList = todoList.filter((v) => v.id !== id)
+    console.log(todoList)
     this.setState({todoList})
   }
   render() {
@@ -46,9 +48,10 @@ class TodoList extends React.Component {
       { 
       ((this.state.hideCompletedItems) ? this.state.todoList
       .filter((v) => !v.completed) : todoList)
-      .map((v) => <TodoItem id={v.id} removeTask={(id) key={v.id} priority={v.priority}
-       content={v.content}
-      completed={v.completed}/>)}
+      .map((v) => <TodoItem id={v.id} removeTask={(id) => this.removeTask(id)} 
+        key={v.id} priority={v.priority}
+        content={v.content}
+        completed={v.completed}/>) }
       </>)
   }
 }
