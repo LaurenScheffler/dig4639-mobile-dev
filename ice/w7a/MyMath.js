@@ -43,3 +43,9 @@ function Sum (a, b) {
 
  }
 export { Sum, AddList };
+  return a + b
+}
+
+console.log(Sum(2,3));
+
+export { Sum };
