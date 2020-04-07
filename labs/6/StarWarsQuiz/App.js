@@ -36,11 +36,12 @@ class TitlePage extends React.Component {
       }
       if(this.state.currentQuestion === questions.length - 1) {
         console.log("DONE")
+        this.setState({currentState: TITLE_STATE})
       } else {
         clearInterval(this.timer)
         console.log(this.state.currentQuestion)
         this.setState({
-          titleText:"You answers X",
+          titleText:"Quiz Over! Play Again!",
           currentState: QUESTION_STATE,
           currentQuestion: this.state.currentQuestion +1
         })
@@ -96,7 +97,6 @@ class TitlePage extends React.Component {
         <View style = {styles.container}>
         <Text style={styles.quiz}>Star Wars Quiz</Text>
         <TitlePage></TitlePage>
-        <Text style={styles.book}>My favorite book is the first book in the Divergent series called Divergent by Veronica Roth. I really like this book because it comforted me when I was really ill in high school. I also really enjoyed the book because I like to think about where, in this dystopian society the book has painted so clearly, would I fit into the story. I really like Veronica Roth's writing because I do not like reading but I love her books; I find her writing to be easy to follow. </Text>
         </View>
         );
       }
