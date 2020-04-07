@@ -1,0 +1,89 @@
+[
+  {
+    "question": "Which is the very first Star Wars movie from 1977?",
+    "possibleAnswers":
+    [
+      {"text":"A New Hope",
+      "correct":true },
+      {"text":"The Revenge of the Sith",
+        "correct":false
+      },
+      {"text":"Return of the Jedi",
+        "correct":false
+      },
+      {"text":"The Empire Strikes Back",
+        "correct": false
+      }
+    ]
+  },
+  {
+      "question": "Who is Luke's Father?",
+      "possibleAnswers":
+      [
+        {"text":"Darth Vader",
+        "correct":true },
+        {"text":"Chancellor Palpatine",
+          "correct":false
+        },
+        {"text":"Obi-wan Kanobi",
+          "correct":false
+        },
+        {"text":"Darth Maul",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How many Star Wars movies are there? (including the newer ones)",
+      "possibleAnswers":
+      [
+        {"text":"3",
+        "correct":false 
+        },
+        {"text":"8",
+          "correct":false
+        },
+        {"text":"9",
+          "correct":true
+        },
+        {"text":"7",
+          "correct": false
+        }
+      ]
+    }, 
+    {
+      "question": "Where is Rey from?",
+      "possibleAnswers":
+      [
+        {"text":"Tatooine",
+        "correct":false 
+        },
+        {"text":"Jakku",
+          "correct":true
+        },
+        {"text":"Alderaan",
+          "correct":false
+        },
+        {"text":"Dagobah",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What record did Han Solo break in the Millenium Falcon?",
+      "possibleAnswers":
+      [
+        {"text":"Made the Kessel Run in 14 parsecs",
+        "correct":false },
+        {"text":"Smuggled the most cargo through the Kessel Run",
+          "correct":false
+        },
+        {"text":"Avoided the most Imperial Cruisers in the Kessel Run",
+          "correct":false
+        },
+        {"text":"Made the Kessel Run in 12 parsecs",
+          "correct": true
+        }
+      ]
+    }
+]
