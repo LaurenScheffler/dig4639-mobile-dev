@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, Button } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Card } from 'react-native-elements';
 
@@ -34,37 +34,16 @@ export default class LinksScreen extends React.Component {
           .then(body => this.setState({contacts:body.contacts})))}, 3000)
     }
 
-    DeleteContact(position){
-      window.fetch("http://plato.mrl.ai:8080/contacts/remove",
-        {
-          ...Headers2,
-          body: JSON.stringify({position:index, status:true})
-        })
-          .then(response => response.json())
-          .then(body => {
-            console.log(body)
-            if(body.removed != undefined) {
-              let contacts = this.state.contacts.filter((i) =>
-              (i !== position))
-              this.setState({contacts:contacts})
-            }
-          })
-      } 
-
     render() {
       return (
+    
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <Text style={styles.text}>Contacts List</Text>   
 
-          <Button
-              color = "#0C7489"
-              title="Delete Contact" 
-              onPress={ () => this.DeleteContact(index) }
-            />
-            
           { this.state.contacts.map((contact, i) => <Card key={i} title={`name: ${contact.name} number: ${contact.number}`}/>)}
 
         </ScrollView>
+        
       );
     }
 }

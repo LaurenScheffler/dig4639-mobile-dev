@@ -21,9 +21,8 @@ export default function BottomTabNavigator({ navigation, route }) {
         component={HomeScreen}
         options={{
           title: 'Edit Contacts',
-          color:"#13505",
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-person" />,
-        }} 
+        }}
       />
       <BottomTab.Screen
         name="Links"
